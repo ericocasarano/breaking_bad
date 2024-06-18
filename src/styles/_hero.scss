@@ -1,0 +1,51 @@
+@use 'variaveis';
+
+.hero {
+    padding: 3.6vw;
+    min-height: 40vh;
+    background-image: url(../images/banner-breaking-bad.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+
+    &__content {
+        max-width: 450px;
+        padding: 30px;
+        background-color: rgba(0,0,0,0.9);
+        border-radius: 6px;
+
+        .title--big {
+            margin-bottom: 20px;
+        }
+
+        .text {
+            margin-bottom: 20px;
+        }
+
+        &__temporadas {
+            display: flex;
+            justify-content: space-between;
+
+            &__temporada {
+                width: 30%;
+                
+                .text--small {
+                    margin-bottom: 16px;
+                }
+
+                button {
+                    display: block;
+                    width: 100%;
+                    height: 45px;
+                    background-color: variaveis.$corBotao;
+                    color: variaveis.$corTexto;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    border-radius: 6px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
