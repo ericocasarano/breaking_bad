@@ -1,0 +1,58 @@
+@use 'variaveis';
+
+.footer {
+    padding: 26px 8px;
+    background-color: #fcff10;
+
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+
+                &:hover {
+                    .text--small {
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+
+            .text--small {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+        
+    }
+
+    .text--small {
+        color: black;
+    }
+
+
+}
+
